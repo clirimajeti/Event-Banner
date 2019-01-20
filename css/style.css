@@ -1,0 +1,58 @@
+/* EVENT PREVIEW BOX */
+body{
+  font-family: 'Open Sans', sans-serif;
+
+}
+.eventBox{
+  margin-top:10%;
+  padding-top:5px;
+   display:flex;
+   border-left:4px solid #17B8E3;
+
+}
+/* EVENT DATE PREVIEW BOX */
+
+
+.datePreview{
+  text-align: center;
+  display: block;
+}
+.dayPreview{
+  font-size:50px;
+  margin:0px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 33px;
+  color:#0537A3;
+}
+.monthPreview{
+  padding-left:5%;
+  margin-top:0px;
+  font-size:21px;
+  line-height: 33px;
+  text-align: center;
+  font-weight: 600;
+  color:#858585;
+}
+
+/* EVENT TITLE & LOCATION & CATEGORY BOX */
+.infoBox{
+    margin-top:-5px;
+   margin-left:5%;
+   padding:0;
+   text-align: center;
+}
+.location{
+  font-size:16px;
+  line-height: 24px;
+  text-align: left;
+  color:#4D4D4D;
+}
+.eventTitle{
+  font-weight: 600;
+  margin:0;
+  font-size:16px;
+  text-align:left;
+  color:#00B9E4;
+
+}
