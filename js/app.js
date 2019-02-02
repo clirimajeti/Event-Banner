@@ -18,8 +18,4 @@ app.controller("myCtrl",['$scope','$http',function ($scope,$http) {
             .then(function(response){
                 $scope.events = response.data;
             });
-      $scope.clickMe = function(){
-        console.log("WORKING");
-      }
-
 }]);

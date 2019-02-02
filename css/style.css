@@ -1,58 +1,81 @@
 /* EVENT PREVIEW BOX */
 body{
-  font-family: 'Open Sans', sans-serif;
-
+  font-family: 'Open Sans', sans-serif !important;
+  height: 100vh;
+  background-image: url(../img/clouds.jpeg);
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+}
+.title{
+  color:white;
+}
+.container{
+  display: flex!important;
+  justify-content: center!important;
 }
 .eventBox{
-  margin-top:10%;
-  padding-top:5px;
-   display:flex;
-   border-left:4px solid #17B8E3;
-
+  display:flex;
+  padding-top:3%;
+  padding-left:15px;
+  border-left:6px solid rgb(7,126,255);
 }
+.cloud{
+  justify-content: space-evenly;
+  margin-top:10%;
+  height: auto;
+  width:100%;
+  padding:20px;
+  background:rgb(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
 /* EVENT DATE PREVIEW BOX */
-
-
 .datePreview{
   text-align: center;
   display: block;
 }
 .dayPreview{
-  font-size:50px;
+  font-size:55px;
   margin:0px;
   font-weight: 300;
   text-align: center;
   line-height: 33px;
-  color:#0537A3;
+  color:rgb(4,75,153);
 }
 .monthPreview{
   padding-left:5%;
   margin-top:0px;
-  font-size:21px;
+  font-size:24px;
   line-height: 33px;
   text-align: center;
   font-weight: 600;
-  color:#858585;
+  color:rgb(7,126,255);
 }
 
 /* EVENT TITLE & LOCATION & CATEGORY BOX */
 .infoBox{
-    margin-top:-5px;
+   margin-top:-5px;
    margin-left:5%;
    padding:0;
    text-align: center;
 }
 .location{
-  font-size:16px;
+  font-size:18px;
   line-height: 24px;
   text-align: left;
-  color:#4D4D4D;
+  color:rgb(42,73,137,0.5);
 }
 .eventTitle{
   font-weight: 600;
   margin:0;
-  font-size:16px;
+  font-size:24px;
   text-align:left;
-  color:#00B9E4;
+  color:rgb(42,73,137);
+}
 
+/* Animation */
+@keyframes cloud-show {
+  0%   { opacity: 0.4; }
+  100% { opacity: 1; }
 }
