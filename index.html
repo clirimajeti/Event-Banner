@@ -16,14 +16,14 @@
     </div>
     <div class="container">
         <div class="row cloud" ng-controller="myCtrl">
-              <div ng-repeat="x in events.data | limitTo:2" class="eventBox">
+              <div ng-repeat="event in events.data | limitTo:3" class="eventBox">
                   <div class="datePreview">
-                      <p class="dayPreview">{{x.StartDate | date : "dd"}}</p>
-                      <span class="monthPreview">{{x.StartDate | date : "MMM"}}</span>
+                      <p class="dayPreview">{{event.StartDate | date : "dd"}}</p>
+                      <span class="monthPreview">{{event.StartDate | date : "MMM"}}</span>
                   </div>
                   <div class="infoBox">
-                      <p class="eventTitle">{{x.Name}}</p>
-                      <p class="location"><span ng-bind-html="x.Description | limitTo:44 | deCode | unsafe"></span>...</p>
+                      <p class="eventTitle">{{event.Name}}</p>
+                      <p class="location"><span ng-bind-html="event.Description | limitTo:44 | deCode | unsafe"></span>...</p>
                   </div>
               </div>
         </div>

@@ -9,6 +9,8 @@ body{
 }
 .title{
   color:white;
+  transition: all 1s ease-in-out;
+  animation: cloud-show 2s infinite;
 }
 .container{
   display: flex!important;
@@ -76,6 +78,21 @@ body{
 
 /* Animation */
 @keyframes cloud-show {
-  0%   { opacity: 0.4; }
-  100% { opacity: 1; }
+  0%   { color:rgb(255, 255, 255, 0.1); }
+  5%   { color:rgb(255, 255, 255, 0.2); }
+  10% { color:rgb(255, 255, 255, 0.3); }
+  15% { color:rgb(255, 255, 255, 0.4); }
+  20% { color:rgb(255, 255, 255, 0.5); }
+  25% { color:rgb(255, 255, 255, 0.6); }
+  30% { color:rgb(255, 255, 255, 0.7); }
+  35% { color:rgb(255, 255, 255, 0.8); }
+  45% { color:rgb(255, 255, 255, 0.9); }
+  50% { color:rgb(255, 255, 255, 0.8); }
+  55% { color:rgb(255, 255, 255, 0.7); }
+  65% { color:rgb(255, 255, 255, 0.6); }
+  75% { color:rgb(255, 255, 255, 0.5); }
+  80% { color:rgb(255, 255, 255, 0.4); }
+  85% { color:rgb(255, 255, 255, 0.3); }
+  90% { color:rgb(255, 255, 255, 0.2); }
+  100% { color:rgb(255, 255, 255, 0.1); }
 }
