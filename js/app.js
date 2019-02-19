@@ -3,10 +3,12 @@ const apiUrl = "https://test-api.jamatu.com/api/events/self/past/Ge7vMUwkSEWmMWO
 
 //Making the API call and storing the API data
 app.controller("myCtrl",['$scope','$http',function ($scope,$http) {
-       $http.get(apiUrl).then(function(response){
-            //Storing the data of the response into "events" for using displaying into the AngularJS interpolation
-                $scope.events = response.data;
-            });
+    $scope.showLoader = true;
+    $http.get(apiUrl).then(function(response){
+        //Storing the data of the response into "events" for using displaying into the AngularJS interpolation
+            $scope.events = response.data;
+            $scope.showLoader = false;
+        });
 }]);
 
 //For formating the data that is stored in events but also for formating data in other places where needed, I created some filters.
@@ -28,5 +30,3 @@ app.filter('deCode', function() {
 app.filter('unsafe', function($sce){
    return $sce.trustAsHtml;
 });
-
-

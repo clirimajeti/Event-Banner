@@ -10,6 +10,9 @@
   <body ng-controller="myCtrl">
     <div class="container">
         <div class="row cloud">
+            <div class="cloud-loader" ng-if="showLoader">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUESURBVHhe7ZtNyBVVGMffTBIzNwnmRxamlEtpEZpoEEFpudAUsdqkK0G0QpciablxIRkVEQRCYEiphNomP/ArRJBWfoFGX6C5MMusLLX/73gfGV/mvTNz35k7c2eeH/zgPfPee2fm3DnnPOc55/Y5juM4juM4juM4juP0KqPkQvmx/FZ+L/+U1+RP8rj8QL4mH5ROiyflVvmvvJXSv+Vn8inZWB6S26VVyj/ya7lKzpCPyPtbTmgd43+75XXJe27KT+UY2SjmyUuSSrgs35VjZVrGybflH5LPuCifkY1gmeTJ4cZ3yiwV15/x8gvJZ9EFLJG15k1J5d2QKziQEzTt/1ou5kAdeU7aTb7CgZxhdObLoS+dxoE6QSd/QdLU3uJAQayWnOOcHMmBurBFcmP0V/dwoED2SM61KZRqwBRJsyUofpgDBcM5GJ3/koQ/PY89fetDqTtslJzztDwvmc1clafkfkkIRABfeYbJK5JRl9itWxDeUIFJnpHzZdHdSsfMllzo3lDqLofkN/IJOaIlf78g35c/SqvIo3KirATDJbHYh5LmwwUek8YRefj2n6VyryTwJlHBNf4qZ8rSeEC+I3+T9s2aPA0Gf0fLZcN175BcJzHkLNl1CFx/kFwEE/3P5SL5uLxPtqPIJzLtZ9MHEvZw/TyJXW3OL0m+OU5OduVRmYUin8gsn00lMjfnPqj0rgwsT0sqjykU89xeh+b8s6QSGZ0LhakSWWNO9gYHcqAKA8xSyT2dDKUCIRi1ZpsXeTfnTr4QRmcLcaZyoAjIEjPa0nwrEz/F0OkXQpxIBa4NpQJ4WXKCL0OpfrwouT8C8Vwggl8jaa7fSeaVnIDVM6MqAXIeEH5xf0z1BgVrFyckHxZntHnk3X+VCQMk9/d7KHUA/RpZC6soOtX35PPS5pZJ9PITyXSU+yYFl5npklUuPoDZBfPFITIrvfxEsqTK/WduwiwNkjvjzQwQBJZNxAYRWhApuVSQvWUeyBuZF1Y2R9YFNkjqAVm/XicJ3QaEymJE5Q2MtE2uPBgtSYZskzbPpztj6hrLAsmLGCza1nQDeUzaFhT25LAB6i542lgr4AWvc6AE6HOYxOMcDiSQ9fVZGCh6WClt3flZDhgsrtjTxzywDCwrbNeRRNbXZ6Fd9EDGiXMSpbAdL2BJAeK8sqhSBSZh2etPQkkckBxgsaUsaIZUCpVBsJ5E1tenIW3gT8KYjUw05bCt7qykApn/NZksgT9LFtRZyINaYqBWe0kK5lVJnX1FgQmzV2A2JkvqjE1MYb5HoelNOAvEytRZSDbsaxXYReCk4650l4UxmylUAOuT29lxni4nSOlxHWxeqkQgHcVaRDt5TZnYILIrlIRN5aqwSXuujFZWnEzlyoQkA9fBhvmALRIRnKbJNhcNe2yiFRaVLqdMJkm2rxBM39myR0KBSJwLZHtDFdJZbBmhqdLfIStkeScOOsGmch+FUgTWQaIJ1U7S+HWHn1NQP6yJx/46iq1dlkDkSWxqSj8OfgFgP9No2wezydB+hvWLZK/IUNlUmHVYQpXKWy4ToTmz7ZU3IYMLPzUl2GbXfRUGmqLg3rhHQpVoSp+93plGfwYSFtYtxMliNKvRP01Udpm/4655IBltGTAG85u+sEuJjTaMilRo0mzhoDT6p4mqUI67ZpMRn61tBMnEeez4dxzHcRzHcRzHcRzHcRzHcQZHX9//dyHItwfJe7kAAAAASUVORK5CYII=">
+              </div>
               <div ng-repeat="event in events.data | limitTo:3" class="eventBox">
                   <div class="datePreview">
                       <p class="dayPreview">{{event.StartDate | date : "dd"}}</p>
@@ -22,6 +25,7 @@
               </div>
         </div>
     </div>
+    <!-- <a href="https://icons8.com/icon/99328/clouds">Clouds icon by Icons8</a> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script src="js/app.js"></script>

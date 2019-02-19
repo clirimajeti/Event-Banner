@@ -9,3 +9,9 @@ body{font-family:'Open Sans',sans-serif!important;height:100vh;background-image:
 .infoBox{margin-top:-5px;margin-left:5%;padding:0;text-align:center}
 .description{font-size:18px;line-height:24px;text-align:left;color:rgb(42,73,137,.5)}
 .eventTitle{font-weight:600;margin:0;font-size:24px;text-align:left;color:#2a4989}
+.cloud-loader{animation:cloud 2s infinite;transition:all 1s ease-in-out}
+@keyframes cloud{
+0%{opacity:.3;transform:rotate(20deg)}
+50%{opacity:.7;transform:rotate(-20deg)}
+100%{opacity:.3;transform:rotate(20deg)}
+}
