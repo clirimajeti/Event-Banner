@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>Event Section</title>
@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
-  <body ng-app="myApp">
-    <div class="text-center">
-        <h1 class="pt-5 title">Upcoming Events Section</h1>
-    </div>
+  <body ng-controller="myCtrl">
     <div class="container">
-        <div class="row cloud" ng-controller="myCtrl">
+        <div class="row cloud">
               <div ng-repeat="event in events.data | limitTo:3" class="eventBox">
                   <div class="datePreview">
                       <p class="dayPreview">{{event.StartDate | date : "dd"}}</p>
@@ -20,7 +17,7 @@
                   </div>
                   <div class="infoBox">
                       <p class="eventTitle">{{event.Name}}</p>
-                      <p class="location"><span ng-bind-html="event.Description | limitTo:44 | deCode | unsafe"></span>...</p>
+                      <p class="description"><span ng-bind-html="event.Description | limitTo:44 | deCode | unsafe"></span>...</p>
                   </div>
               </div>
         </div>

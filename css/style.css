@@ -1,98 +1,11 @@
-/* EVENT PREVIEW BOX */
-body{
-  font-family: 'Open Sans', sans-serif !important;
-  height: 100vh;
-  background-image: url(../img/clouds.jpeg);
-  background-size: cover;
-  align-items: center;
-  text-align: center;
-}
-.title{
-  color:white;
-  transition: all 1s ease-in-out;
-  animation: cloud-show 2s infinite;
-}
-.container{
-  display: flex!important;
-  justify-content: center!important;
-}
-.eventBox{
-  display:flex;
-  padding-top:3%;
-  padding-left:15px;
-  border-left:6px solid rgb(7,126,255);
-}
-.cloud{
-  justify-content: space-evenly;
-  margin-top:10%;
-  height: auto;
-  width:100%;
-  padding:20px;
-  background:rgb(255, 255, 255, 0.7);
-  border-radius: 15px;
-}
-
-/* EVENT DATE PREVIEW BOX */
-.datePreview{
-  text-align: center;
-  display: block;
-}
-.dayPreview{
-  font-size:55px;
-  margin:0px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 33px;
-  color:rgb(4,75,153);
-}
-.monthPreview{
-  padding-left:5%;
-  margin-top:0px;
-  font-size:24px;
-  line-height: 33px;
-  text-align: center;
-  font-weight: 600;
-  color:rgb(7,126,255);
-}
-
-/* EVENT TITLE & LOCATION & CATEGORY BOX */
-.infoBox{
-   margin-top:-5px;
-   margin-left:5%;
-   padding:0;
-   text-align: center;
-}
-.location{
-  font-size:18px;
-  line-height: 24px;
-  text-align: left;
-  color:rgb(42,73,137,0.5);
-}
-.eventTitle{
-  font-weight: 600;
-  margin:0;
-  font-size:24px;
-  text-align:left;
-  color:rgb(42,73,137);
-}
-
-/* Animation */
-@keyframes cloud-show {
-  0%   { color:rgb(255, 255, 255, 0.1); }
-  5%   { color:rgb(255, 255, 255, 0.2); }
-  10% { color:rgb(255, 255, 255, 0.3); }
-  15% { color:rgb(255, 255, 255, 0.4); }
-  20% { color:rgb(255, 255, 255, 0.5); }
-  25% { color:rgb(255, 255, 255, 0.6); }
-  30% { color:rgb(255, 255, 255, 0.7); }
-  35% { color:rgb(255, 255, 255, 0.8); }
-  45% { color:rgb(255, 255, 255, 0.9); }
-  50% { color:rgb(255, 255, 255, 0.8); }
-  55% { color:rgb(255, 255, 255, 0.7); }
-  65% { color:rgb(255, 255, 255, 0.6); }
-  75% { color:rgb(255, 255, 255, 0.5); }
-  80% { color:rgb(255, 255, 255, 0.4); }
-  85% { color:rgb(255, 255, 255, 0.3); }
-  90% { color:rgb(255, 255, 255, 0.2); }
-  100% { color:rgb(255, 255, 255, 0.1); }
-}
+body{font-family:'Open Sans',sans-serif!important;height:100vh;background-image:url(../img/clouds.jpeg);background-size:cover;align-items:center;text-align:center}
+.title{color:#fff;transition:all 1s ease-in-out;animation:cloud-show 2s infinite}
+.container{display:flex!important;justify-content:center!important}
+.eventBox{display:flex;padding-top:3%;padding-left:15px;border-left:6px solid #077eff}
+.cloud{justify-content:space-evenly;margin-top:10%;height:auto;width:100%;padding:20px;background:rgb(255,255,255,.7);border-radius:15px}
+.datePreview{text-align:center;display:block}
+.dayPreview{font-size:55px;margin:0;font-weight:300;text-align:center;line-height:33px;color:#044b99}
+.monthPreview{padding-left:5%;margin-top:0;font-size:24px;line-height:33px;text-align:center;font-weight:600;color:#077eff}
+.infoBox{margin-top:-5px;margin-left:5%;padding:0;text-align:center}
+.description{font-size:18px;line-height:24px;text-align:left;color:rgb(42,73,137,.5)}
+.eventTitle{font-weight:600;margin:0;font-size:24px;text-align:left;color:#2a4989}
